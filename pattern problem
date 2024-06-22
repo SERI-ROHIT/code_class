@@ -1,0 +1,392 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+// this will the element in as a 1234 in in a repeating way
+
+
+ /*
+    int n;
+    cout<<"enter the number of row you want to print "<<endl;
+    cin>>n;
+    int i=1;
+
+    while(i<=n){
+        int j=1;
+        while(j<=n){
+            cout<< j;
+            j = j+1;
+        }
+        cout<<endl;
+        i= i+1;
+    }
+
+
+    */
+
+
+
+    // printing the number in 4321
+/*
+    int n;
+    cin>>n;
+    int i=1;
+    while (i<=n){
+        int j=1;
+        while(j<=n){
+            cout<<n-j+1;
+            j=j+1;
+
+        }
+        cout<<endl;
+        i=i+1;
+    }
+   */
+
+   //printng 12345678910 in a row and column
+
+   /*
+   int n;
+   cout<<"give the row number you want to print "<<endl;
+   cin>>n;
+   int i=1;
+   int count=1;
+   while(i<=n){
+    int j=1;
+    while(j<=n){
+        cout<<count<<" ";
+        count =count+1;
+        j=j+1;
+    }
+    cout <<endl;
+    i=i+1;
+   }
+*/
+
+
+
+//printing *
+//         * * in the code
+
+/*
+int n;
+cin>>n;
+int row=1;
+while(row<=n){s
+    int col=1;
+    while(col<=row ){
+        cout<<"*";
+        col=col+1;
+
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+//print the series of +ve no serie in a row anad column wise
+/*
+int n;
+cin>>n;
+int row=1;
+while(row<=n){
+    int col=1;
+    while(col<=row){
+        cout<<row;
+        col =col+1;
+
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+
+
+// this pattern will print  1
+ //                         2 3
+ //                         4 5 6
+ //                         7 8 9 10
+ /*
+int n;
+cin>>n;
+int row=1;
+int count =1;
+while(row<=n){
+   int col=1;
+    while(col<=row)
+    {
+        cout<< count;
+        count=count+1;
+        col=col+1;
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+
+//print    1
+ //        2 3
+  //       3 4 5
+  //       5 6 7
+  /*
+int n;
+cin>>n;
+int row=1;
+while(row<=n){
+    int col=1;
+    int value=row;
+    while(col<=row){
+        cout<<value;
+        value=value+1;
+        col=col+1;
+
+    }
+    cout<<endl;
+    row=row+1;
+}
+
+
+*/
+
+
+
+//print    1
+//         21
+//         321
+ //        4321
+
+/*
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+    int j = 1;
+    while(j<=i){
+        cout<<i-j+1 <<" ";
+        j=j+1;
+
+    }
+    cout<<endl;
+    i=i+1;
+}
+*/
+
+/*
+
+    for(int i = 1; i <= 4; i++){
+        for(int j = 4; j >= i; j--){
+            cout << (j >= i ? j : ' ');
+            cout << " ";
+        }
+        cout << endl;
+    }
+
+*/
+
+//print AAAAA
+//      BBBBB   and so one
+
+
+/*
+int n;
+cin>>n;
+int row=1;
+while(row<=n){
+        int col=1;
+   while(col<=n){
+    char ch='A'+row-1;
+    cout<<ch;
+    col=col+1;
+   }
+   cout<<endl;
+   row=row+1;
+
+}
+*/
+
+
+//print ABC
+//      ABC
+//      ABC
+ /*
+int n;
+cin>>n;
+int row=1;
+while(row<=n){
+    int col=1;
+    while(col<=n){
+          char ch='A'+col-1;
+        cout<<ch;
+        col =col+1;
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+//print   ABC
+    //    DEF
+    //    GHI
+/*
+    int n;
+    cin>>n;
+     char row ='A';
+      char start='A';
+      while(row<=n){
+        char  col = 'A';
+        start=start+1;
+        while(col<=n){
+            cout<<start;
+            col=col+1;
+        }
+        cout<<endl;
+        row=row+1;
+      }
+*/
+
+//printmg ABC, BCD, CDE
+
+
+/*
+
+int n;
+cin>>n;
+int row=1;
+while(row<=n){
+   int col=1;
+    while(col<=n){
+        char ch= 'A'+row+col-2;
+        cout<<ch;
+        col=col+1;
+
+    }
+    cout<<endl;
+    row=row+1;
+
+}
+*/
+
+
+// print A
+ //      BB
+  //     CCC
+/*
+int  n;
+cin>>n;
+int row=1;
+while (row<=n){
+    int col=1;
+    while(col<=row){
+        char ch=('A'+row-1);
+        cout<<ch;
+        col=col+1;
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+
+
+
+//print   A
+//        BC
+//        CDE
+//        DEFG
+
+
+/*
+int  n;
+cin>>n;
+int row=1;
+while (row<=n){
+    int col=1;
+    while(col<=row){
+        char ch=('A'+row + col-2);
+        cout<<ch;
+        col=col+1;
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+
+   // primnt C
+//           BC
+ //          ABC  usimg c++
+
+
+/*
+int n;
+cin>>n;
+int row=1;
+while(row<=n)
+{
+
+    int col=1;
+    char start= 'A'+n-row;// to find starting charactar
+    while(col<=row){
+        cout<<start ;
+        start =start+1;
+        col=col+1;
+
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+
+
+//print               *
+//                   **
+//                  ***
+/*
+int n;
+cin>>n;
+int row=1;
+while(row<=n){
+    //space
+    int space =n-row;
+    while(space){
+        cout<<" ";
+        space =space -1;
+    }
+    //star
+    int col=1;
+    while(col<=row){
+            cout<<"*";
+        col =col+1;
+    }
+    cout<<endl;
+    row=row+1;
+}
+*/
+
+
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+
+    int row = n;
+    while (row >= 1) {
+        int col = 1;
+        while (col <= row) {
+            cout << "*";
+            col=col+1;
+        }
+        cout << endl;
+        row=row-1;
+    }
+
+
+
+
+
+    return 0;
+}
